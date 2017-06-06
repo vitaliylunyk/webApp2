@@ -7,3 +7,5 @@ for build:
 `npm run build`
 for tests:
 `npm test`
+
+for use it, open `http://localhost:8080/` in your browser!
