@@ -1,0 +1,50 @@
+@import "../../../assets/less/variables";
+footer {
+  .footer-links {
+    width: 100%;
+    background-color: @color-primary;
+    border-radius: 0 0 5px 5px;
+    padding: 3px 0;
+    &-right {
+      float: right;
+    }
+    &-item {
+      display: inline-block;
+      padding: 10px;
+      font-size: 14px;
+      cursor: pointer;
+      color: @color-white;
+      text-transform: uppercase;
+      border-right: 1px solid @color-white;
+      text-decoration: none;
+      &:last-child {
+        border-right: none;
+        cursor: default;
+        &:hover {
+          color: @color-white;
+        }
+      }
+      &.last {
+        border-right: none;
+      }
+      &:hover {
+        color: @color-secondary;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  footer {
+    .footer-links {
+      a {
+        display: none;
+      }
+      &-right {
+        clear: right;
+        text-align: center;
+        float: none;
+      }
+    }
+  }
+}
