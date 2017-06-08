@@ -1,0 +1,51 @@
+<header>
+  <menu class="header-links">
+    <a class="header-links-menu"></a>
+    <div class="header-links-items">
+      <a href="delivery" class="header-links-item">delivery</a>
+      <a href="payments" class="header-links-item">payments</a>
+      <a href="about" class="header-links-item">about</a>
+      <a href="faq" class="header-links-item">faq</a>
+      <a href="terms" class="header-links-item last">terms and conditions</a>
+      <!-- <div class="header-links-right">
+        <div class="login-block" ng-if="!headerVm.isEmpty()">
+          <div class="header-links-item" ng-click="headerVm.openRegistration()">sign up</div>
+          <div class="header-links-item" ng-click="headerVm.openLogin()">sign in</div>
+        </div> -->
+        <!-- <div class="user-data" ng-if="headerVm.isEmpty()">
+          <a href="profile" class="user-login"><i></i> {{headerVm.userName}}</a>
+          <span class="user-data-dropdown">
+            <a href="profile" class="user-data-dropdown-link">Profile</a>
+            <a class="user-data-dropdown-link" ng-click="headerVm.userLogout()">Logout</a>
+          </span>
+        </div>
+      </div>-->
+    </div>
+  </menu>
+  <div class="header-container">
+    <div class="header-logo-wrapper">
+      <a href="#" class="header-logo-image"></a>
+      <div class="header-logo-text">
+        <div class="header-text">test web store</div>
+      </div>
+    </div>
+    <div class="header-cart">
+      <a href="cart" class="header-cart-icon"></a>
+    </div>
+  </div>
+  <!-- <div class="header-categories">
+    <ul class="header-categories-list">
+      <li class="header-categories-list-item menu">
+        <a class="header-categories-list-item-title">menu</a>
+      </li>
+      <li class="header-categories-list-item" ng-repeat="category in headerVm.categories">
+        <a href="category/{{category.name | lowercase}}" ng-click="headerVm.setCategory(category)" class="header-categories-list-item-title" ng-bind="category.name"></a>
+        <ul class="item-subcategories">
+          <li class="item-subcategories-subcategory" ng-repeat="subcategory in category.subCategories">
+            <a class="item-subcategories-subcategory-title" ng-click="headerVm.setSubcategory(subcategory)" href="items/{{subcategory.name | lowercase}}" ng-bind="subcategory.name"></a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div> -->
+</header>

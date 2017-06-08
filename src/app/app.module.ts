@@ -3,6 +3,7 @@ import { BrowserModule }  from '@angular/platform-browser';
 import {Routes, RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { HeaderComponent }   from './common/header/header.component';
 import { FooterComponent }   from './common/footer/footer.component';
 import { AboutComponent }   from './about/about.component';
 import { HomeComponent }   from './home/home.component';
@@ -40,6 +41,7 @@ const appRoutes: Routes = [
   ],
   declarations: [
     AppComponent,
+    HeaderComponent,
     FooterComponent,
     HomeComponent,
     AboutComponent,
